@@ -1,0 +1,157 @@
+.VerificationContainer{
+width: 100%;
+display: flex;
+.mainContainer{
+flex: 6;
+.titleContainer{
+margin-top: 30px;
+.pageTitle{
+font-size: 20px;
+font-weight: 700;
+color: blue;
+padding: 20px;
+
+}
+}
+.VerificationNavBar{
+display: flex;
+gap: 35px;
+padding: 20px;
+margin-top: 30px;
+span{
+color: blue;
+cursor: pointer;
+font-weight: 500;
+
+}
+}
+
+.VerificationList{
+display: flex;
+.requestContainer{
+display: flex;
+width: 100%;
+.userRequest{
+display: flex;
+gap: 15px;
+align-items: center;
+.requestImage{
+height: 50px;
+width: 50px;
+border-radius: 8px;
+}
+.requestInfo{
+display: flex;
+flex-direction: column;
+gap: 2px;
+.name{
+font-size: 18px;
+font-weight: 700;
+}
+.details{
+font-size: 16px;
+font-weight: 600;
+}
+.view{
+font-size: 15px;
+color: blue;
+font-weight: 600;
+cursor: pointer;
+}
+.info{
+display: flex;
+flex-direction: column;
+}
+}
+}
+}
+.actionBtn{
+display: flex;
+gap: 15px;
+button.approveBtn{
+background: blue;
+padding: 8px;
+color: white;
+border-radius: 8px;
+width: 70px;
+text-align: center;
+border: none;
+outline: none;
+cursor: pointer;
+}
+button.rejectBtn{
+background: red;
+padding: 8px;
+color: white;
+border-radius: 8px;
+width: 70px;
+text-align: center;
+border: none;
+outline: none;
+cursor: pointer;
+}
+}
+}
+
+// ================================Verification status================================
+.VerificationStatus{
+display: flex;
+width: 100%;
+.approvedOrRejected{
+display: flex;
+gap: 15px;
+align-items: center;
+.requestImage{
+height: 50px;
+width: 50px;
+border-radius: 8px;
+}
+.approvedOrRejectedInfo{
+display: flex;
+flex-direction: column;
+gap: 2px;
+.name{
+    font-size: 18px;
+    font-weight: 700;
+}
+.details{
+    font-size: 16px;
+    font-weight: 600;
+}
+.view{
+    font-size: 15px;
+    color: blue;
+    font-weight: 600;
+    cursor: pointer;
+}
+}
+}
+}
+}
+button.approveBtn{
+background: blue;
+padding: 8px;
+color: white;
+border-radius: 8px;
+width: 80px;
+text-align: center;
+border: none;
+outline: none;
+cursor: pointer;
+}
+button.rejectBtn{
+background: red;
+padding: 8px;
+color: white;
+border-radius: 8px;
+width: 80px;
+text-align: center;
+border: none;
+outline: none;
+cursor: pointer;
+}
+}
+
+
+// ===========rejected or approved users==========
+

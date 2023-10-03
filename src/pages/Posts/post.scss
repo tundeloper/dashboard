@@ -1,0 +1,316 @@
+
+.HeaderContainer{
+    .PageTitle{
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.AllPostsContainer{
+    .TabContainer{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 15px;
+        .TabSlide{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .TabSlide.active {
+            /* Styles for active tab */
+            text-align: center;
+            border-bottom: 2px solid #007bff; /* Add your desired active indicator style */
+            font-weight: bold; /* Make the text bold or apply your desired style */
+            color: blue;
+          }
+          
+          .NotificationContent.active,
+          .RatesContent.active {
+            /* Styles for active content */
+            display: block; /* Show active content */
+          }
+          
+          .NotificationContent:not(.active),
+          .RatesContent:not(.active) {
+            /* Styles for inactive content */
+            display: none; /* Hide inactive content */
+          }
+    }
+}
+
+
+
+
+.formContainer {
+    padding: 20px;
+    width: 80rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 30px;
+    align-items: center;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        /* Style input and select fields */
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+    }
+    .Inputs{
+        border: 1px solid rgb(212, 211, 211);
+    }
+    .TitleField{
+        background: transparent;
+        border: none;
+        font-weight: bold;
+        height: 100px;
+        color: #255174;
+    }
+    .TitleField[type="text"]{
+        font-size: 40px;
+    }
+    .TitleField::placeholder{
+        font-size: 40px;
+        color: #255174;
+    }
+    .TitleField:focus{
+        background: transparent;
+        outline: none;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        height: 300px;
+        outline: none;
+    }
+  }
+  
+  /* Style form labels */
+  .InputFields label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the submit button on hover */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+// =======================================notification styles=-==================================
+  .NotificationItem {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+    .Notification{
+        background: white;
+        padding: 16px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border: 1px solid #255174;
+        // height: 250px;
+        cursor: pointer;
+        .DateAndTime{
+            display: flex;
+            justify-content: space-between;
+            .Time, .date{
+                font-size: 13px;
+                color: #255174;
+            margin-top: 15px;
+            }
+        }
+        .ActionButtons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+            .EditIcon{
+                color: #255174;
+                cursor: pointer;
+            }
+            .IconDelete{
+                color: red;
+                cursor: pointer;
+            }
+        }
+        .NotificationDetails{
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            .PostTitle{
+                font-weight: bold;
+                color: #255174;
+                font-size: 17px;
+            }
+            .NotificationBody{
+                font-size: 15px;
+            }
+        }
+        
+    }
+  }
+
+
+ /* Styles for the overlay background */
+.DeleteConfirmationDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  /* Styles for the dialog box */
+  .WarningMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure it's above the overlay background */
+  }
+  
+  .NoticeText {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .ButtonsConatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #255174;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    button:hover {
+        background-color: #255174;
+    }
+    .YesBtn{
+        background: red;
+    }
+      
+  }
+ 
+
+
+
+// ===========================High card rates styles===================================
+
+.HighcardRatesItem{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .MainRatesContainer{
+        background: white;
+        height: 100px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #255174;
+        border-radius: 30px;
+        .HighcardRatesDetails{
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            .CardRateTitle{
+                font-weight: bold;
+                color: #255174;
+                font-size: 17px;
+            }
+            .HighcardRatesBody{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-weight: 500;
+                font-size: 17px;
+            }
+        }
+        .ActionButtons{
+            margin-top: 10px;
+            .IconDelete{
+                color: red;
+                cursor: pointer;
+            }
+        }
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Style select dropdown arrow */
+//   select {
+//     appearance: none;
+//     background-image: url('@mui/icons-material/KeyboardArrowDownOutlined'); /* Replace with your arrow image URL */
+//     background-repeat: no-repeat;
+//     background-position: right center;
+//     padding-right: 30px; /* Adjust to accommodate the arrow image width */
+//   }
+  
+  /* Media query for responsive design (adjust breakpoints as needed) */
+  @media (max-width: 768px) {
+    .formContainer {
+      max-width: 100%;
+    }
+  }
+  
+
+  

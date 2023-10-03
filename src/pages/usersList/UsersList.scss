@@ -1,0 +1,27 @@
+.RatesTableContainer{
+    height: 700px;
+    width: 100%;
+    margin-top: 20px;
+    .AddNewBtn{
+        height: 30px;
+        width: 100px;
+        background: rgba(128, 128, 128, 0.438);
+        color: white;
+        border: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 10px;
+        
+    }
+   
+}
+
+.ViewUserBtn{
+    background: blue;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}

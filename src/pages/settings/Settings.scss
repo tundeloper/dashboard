@@ -1,0 +1,272 @@
+.rateContent{
+    .rates{
+        padding: 20px;
+        .pageTitle{
+            font-size: 17px;
+            font-weight: 700;
+            color: blue;
+        }
+        .tabBar{
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            margin-top: 40px;
+            border-bottom: 1px solid rgba(0, 0, 255, 0.123);
+            .Tab{
+                font-size: 13px;
+                background: blue;
+                color: white;
+                cursor: pointer;
+                padding: 6px;
+                width: 70px;
+                text-align: center;
+                transition: 500ms;
+                .active{
+                    background: white;
+                    color: blue;
+                }
+            }
+            .Tab:hover{
+                background: red;
+            }
+        }
+    }
+}
+
+
+
+// ===========================security settings style========================================
+
+
+/* PasswordSettings.scss */
+.password-settings {
+    padding: 20px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 30px;
+  
+    .input-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      label {
+        flex: 1;
+        margin-right: 10px;
+      }
+  
+      input {
+        flex: 2;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      .visibility-toggle {
+        flex: 0.3;
+        padding: 8px;
+        background-color: transparent;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+    }
+
+    .newPasswordBtn{
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+
+    }
+    .change-password-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #255174;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+    }
+    .ResetPassword{
+      margin-top: 16px;
+      text-align: center;
+      .Reset{
+        color: blue;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+  .newPasswordBtn{
+    display: flex;
+    flex-direction: column;
+  }
+  .PasswordUpdate{
+    font-size: 26px;
+    font-weight: bold;
+    color: #255174;
+  }
+// ====================reset password pop up======================
+/* Add these styles to your CSS file */
+
+.ResetPwaPopUpOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensure it's above other content */
+}
+.ResetPwaPopUp{
+  background: #255174;
+  width: 400px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  padding: 19px;
+}
+.OptionOtp{
+  display: flex;
+  flex-direction: column;
+  .DestinationText{
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+.ResetPwaPopUp span {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.Choose{
+  font-weight: bold;
+}
+
+.OtpOptions {
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.OtpOptions span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.OtpOptions input[type="radio"] {
+  margin-right: 10px;
+}
+
+.PopUpBtnConater {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AlertText {
+  font-size: 16px;
+  color: #ff0000; /* Red color for error message, you can change it */
+  margin-bottom: 10px;
+}
+
+.SendOtp {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color for the button, you can change it */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.SendOtp:hover {
+  background-color: #0056b3; /* Darker blue on hover, you can change it */
+}
+
+  // ========================= 2 FACTOR AUTHENTICATION=================================
+
+.TwoFactorAuthentication{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  .TwoFactorHead{
+    border-bottom: 1px solid #255174;
+    padding-bottom: 10px;
+    .TwoFactorText{
+      font-size: 26px;
+      color: #255174;
+      font-weight: bold;
+    }
+  }
+  
+  .FactorContents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    .TwoFactorbody{
+      display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    .TopHfactorBody{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      .LockIcon{
+        font-size: 50px;
+        color: #255174;
+      }
+      .FactorTitleText{
+        font-size: 26px;
+        font-weight: bold;
+        color: #255174;
+      }
+      
+    }
+   
+    }
+    .BodYText{
+      font-size: 16px;
+      color: grey;
+    }
+    .EnableBtnContainer{
+      margin-top: 20px;
+      .EnableBtn{
+        background: #255174;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 13px;
+        padding-right: 13px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

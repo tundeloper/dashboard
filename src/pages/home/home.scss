@@ -1,0 +1,151 @@
+.home {
+  .homeContainer {
+    .widgets{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .Widget{
+        height: 120px;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      
+        .leftInner{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .widgetTitle{
+            font-size: 20px;
+            color: grey;
+          }
+          .widgetAmount{
+            font-size: 30px;
+            font-weight: bold;
+          }
+          .widgetLink{
+            font-size: 15px;
+            text-decoration: underline;
+          }
+        }
+        .RightInner{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .widgetPercentage{
+            color: green;
+          }
+          .widgetIcon{
+            background: rgba(255, 0, 0, 0.253);
+            padding: 6px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            color: red;
+          }
+        }
+        
+
+      }
+
+    }
+    .charts {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .charts {
+      padding: 5px 20px;
+    }
+
+    .listContainer {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 20px;
+
+      .listTitle {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 15px;
+      }
+    }
+    .GraphsContainer{
+      display: flex;
+      margin-top: 40px;
+      height: 500px;
+      gap: 30px;
+      .OverralSalesContainer{
+        width: 40%;
+        background: white;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .PriceContainer{
+          width: 150px;
+          height: 150px;
+          border: 3px solid blue;
+          border-radius: 50%;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          .SalesAmount{
+            display: flex;
+            gap: 10px;
+       
+            font-weight: bold;
+          .NairaIcon{
+            color: grey;
+            font-size: 20px;
+          }
+          .Amount{
+            color: blue;
+            font-size: 40px;
+          }
+          }
+          
+        }
+        .BottomOverral{
+          margin-top: 30px;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          .TotalSalesText{
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+          }
+          .TotalSalesLink{
+            font-size: 17px;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .HomeGraph{
+      width: 60%;
+      background: white;
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+    }
+    .SalesTextContainer{
+      margin-left: 10px;
+      margin-bottom: 20px;
+      .SalesChartText{
+        font-size: 20px;
+        font-weight: bold;
+        color: grey;
+      }
+    }
+  }
+}

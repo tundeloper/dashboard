@@ -1,0 +1,26 @@
+.analyticsContainer{
+    height: 100vh;
+   .UserAnalytics{
+    .usersAnalyticsText{
+        font-size: 16px;
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .chartAnalytics{
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    
+   }
+   .UserAnalyticFilter{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    margin-right: 30px;
+   }
+}
+
+

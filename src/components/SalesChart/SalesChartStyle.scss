@@ -1,0 +1,67 @@
+.ProductChartContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    .ProductChart{
+        display: flex;
+        background: #ffffff;
+        box-shadow: 0ch;
+        width: 100%;
+        border: 1px solid blue;
+        padding: 15px;
+        gap: 15px;
+        border-radius: 10px;
+        justify-content: center;
+       
+    }
+    .productLeftSide{
+        display: flex;
+        justify-content: space-between;
+        .ProductChartInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .productChartInfoTop{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                .ProductName{
+                    font-weight: bold;
+                    font-size: 17px;
+                }
+                .salesInfo{
+                    color: grey;
+                    font-size: 12px;
+                }
+            }
+        }
+        .productChartInfoBottom{
+            display: flex;
+            flex-direction: column;
+            .ProductPriceInfo{
+                display: flex;
+                .ProductAmount{
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                .ProductTitle{
+                    font-size: 13px;
+                    color: grey;
+                }
+            }
+            .MainProductPrice{
+                color: grey;
+                font-size: 14px;
+            }
+            
+        }
+        .PercentageTag{
+            font-size: 13px;
+            color: green;
+            margin-left: 15px;
+
+        }
+    }
+   
+}

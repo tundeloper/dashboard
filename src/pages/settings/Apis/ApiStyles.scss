@@ -1,0 +1,152 @@
+.WalletContainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tab-container {
+    display: flex;
+    // justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 4px 10px;
+    margin: 0 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .tab:hover {
+    background-color: #ddd;
+  }
+  .label{
+    font-size: 8px;
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .pageTitle{
+    font-size: 17px;
+    font-weight: bold;
+    color: blue;
+  }
+  
+//   ======Paystack api key styles=============
+
+.NoticeContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .NoticeText{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .Url{
+        color: red;
+        background: rgba(255, 0, 0, 0.342);
+        padding: 3px;
+        width: 300px;
+    }
+}
+.PaystackActivationFormContainer{
+  margin-top: 30px;
+  .heading{
+    margin-bottom: 20px;
+    .paystack{
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+.PaystackActivationForm{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  .OptionsContainer{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .Options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+    
+    .LeftTitle{
+      font-weight: bold;
+    }
+
+    .CheckBoxField{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      left: 0;
+      color: grey;
+      font-size: 13px;
+      .infoMark{
+        height: 15px;
+        width: 15px;
+        font-size: 10px;
+        border-radius: 50%;
+        background: black;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .InputFormField{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    .InputField{
+      display: flex;
+    }
+    .InputField input{
+      width: 400px;
+      height: 20px;
+      padding: 8px;
+      border: 1px solid grey;
+      color: black;
+    }
+    .LabelText{
+      color: grey;
+      font-size: 13px;
+    }
+  }
+  .infoMark{
+    height: 15px;
+    width: 15px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .BtnContainer{
+    margin-top: 20px;
+    .SubmitBtn{
+      background: #255174;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

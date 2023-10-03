@@ -1,0 +1,160 @@
+.rateContainer{
+    .rateContent{
+        .rates{
+            padding: 20px;
+            .pageTitle{
+                font-size: 17px;
+                font-weight: 700;
+                color: blue;
+            }
+            .tabBar{
+                display: flex;
+                gap: 10px;
+                width: 100%;
+                margin-top: 40px;
+                border-bottom: 1px solid rgba(0, 0, 255, 0.123);
+                .Tab{
+                    font-size: 13px;
+                    background: blue;
+                    color: white;
+                    cursor: pointer;
+                    padding: 6px;
+                    width: 70px;
+                    text-align: center;
+                    transition: 500ms;
+                    .active{
+                        background: white;
+                        color: blue;
+                    }
+                }
+                .Tab:hover{
+                    background: red;
+                }
+            }
+
+            // =========set rates styles============
+            .setRates{
+                margin-top: 20px;
+                .inputfield{
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    padding-top: 20px;
+                   
+                    select{
+                        height: 50px;
+                        margin-top: 10px;
+                        border-radius: 10px;
+                        border: 1px solid blue;
+                        color: blue;
+                        font-size: 16px;
+                        padding: 10px;
+                    
+                    }
+                    .inputLabel{
+                        color: blue;
+                        font-size: 15px;
+                    }
+                    .amountInput{
+                        height: 27px;
+                        border-radius: 10px;
+                        border: 1px solid blue;
+                        color: blue;
+                        font-size: 16px;
+                        padding: 10px;
+                        margin-top: 10px;
+                    }
+                }
+                .iconInput{
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    .inputLabel{
+                        color: blue;
+                        font-size: 15px;
+                    }
+                    .UploadImageIcon{
+                        display: flex;
+                        background: rgba(0, 0, 255, 0.37);
+                        justify-content: center; /* Horizontally center the content */
+                        align-items: center; /* Vertically center the content */
+                        width: 70px;
+                        height: 70px;
+                        margin-right: -20px;
+                        border-radius: 50%;
+                        border: 1px dotted blue;
+                        cursor: pointer;
+                        position: relative;
+                        .PlusText{
+                            font-size: 25px;
+                            font-weight: bold;
+                            color: grey;
+                            position: absolute;
+                           
+                        }
+                    }
+                    .iconUpload{
+                        padding: 30px;
+                        opacity: 0;
+                    }
+                    .error{
+                        font-size: 13px;
+                        color: red;
+                    }
+                    .ChooseIcon{
+                        display: flex;
+                        align-items: center;
+                        .DisplayedIcon{
+                            height: 30px;
+                            width: 30px;
+                            margin-left: 30px;
+                            background: blue;
+                            padding: 6px;
+                            border-radius: 50px;
+                        }
+                    }
+                    
+                }
+            }
+            .setRatesForm{
+                .updateBtn{
+                    background: blue;
+                    height: 30px;
+                    width: 100px;
+                    color: white;
+                    text-align: center;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 7px;
+                    margin-top: 50px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+// ==============Rate table container===================
+
+.RatesTableContainer{
+    height: 700px;
+    width: 100%;
+    margin-top: 20px;
+    .AddNewBtn{
+        height: 30px;
+        width: 100px;
+        background: rgba(128, 128, 128, 0.438);
+        color: white;
+        border: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 10px;
+        
+    }
+}
