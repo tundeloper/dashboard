@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const url = `https://776f-102-88-63-203.ngrok-free.app`;
+
 export async function login(payload) {
   console.log(payload);
   const response = await axios.post(
@@ -10,19 +11,21 @@ export async function login(payload) {
   return response.data;
 }
 
-export async function analysis() {
+export async function salesAnalysis() {
   const headers = {
     "Content-Type": "application/json",
   };
-  const response = await axios.get(
-    `${url}/api/V1/skyshowNG/Admin/UsersAnalysis`,
-    { headers }
+  const response = await axios.post(
+    `${url}/api/V1/skyshowNG/Admin/SalaesAnalysis`,
+    {
+      headers,
+    }
   );
   return response.data;
 }
 
 export async function userAnalysis() {
-  const response = await axios.get(`${url}/api/skyshowNG/Admin/UsersAnalysis`);
+  const response = await axios.post(`${url}/api/skyshowNG/Admin/UsersAnalysis`);
   return response.data;
 }
 

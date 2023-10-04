@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import SalesChart from "../../components/SalesChart/SalesChart";
 import "./SalesAnalyticsStyle.scss";
 import ProductChart from "../../components/SalesChart/ProductChart";
-import { analysis, login } from "../../utils/fetch";
+import { salesAnalysis } from "../../utils/fetch";
 
 function SalesAnalytics() {
   const data = async () => {
-    const response = await analysis();
+    const response = await salesAnalysis();
     console.log(response);
   };
 

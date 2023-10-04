@@ -4,17 +4,17 @@ import UsersChart from "../../components/UsersChart/UsersChart";
 import { userAnalysis } from "../../utils/fetch";
 
 function Analytics() {
-  // const data = async () => {
-  //   try {
-  //     const response = await userAnalysis();
-  //     console.log(response);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-  // useEffect(() => {
-  //   data();
-  // }, []);
+  const data = async () => {
+    try {
+      const response = await userAnalysis();
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    data();
+  }, []);
   return (
     <div className="analyticsContainer">
       {/* ====users analytics============= */}
